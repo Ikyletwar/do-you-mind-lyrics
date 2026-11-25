@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Halaman lirik Do You Mind — KYLA (2009), singel UK funky yang kemudian disampel dalam One Dance. Tampilan editorial, responsif, dan aksesibel.">
+  <title>Do You Mind — KYLA · Lirik</title>
+
+  <script>
+    // Animasi hanya aktif bila pengguna tidak meminta reduced-motion.
+    if (!window.matchMedia || !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("js-motion");
+    }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicRecording",
+    "name": "Do You Mind",
+    "byArtist": { "@type": "MusicArtist", "name": "KYLA" },
+    "datePublished": "2009-01-26",
+    "genre": ["UK funky", "House"],
+    "producer": { "@type": "MusicGroup", "name": "Crazy Cousinz" },
+    "composer": { "@type": "Person", "name": "Kyla Reid" },
+    "url": "https://en.wikipedia.org/wiki/Do_You_Mind_(Kyla_song)"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --surface: #fffdf9;
+      --ink: #16181a;
+      --muted: #6b6f73;
+      --line: rgba(22, 24, 26, 0.14);
+      --accent: #a3412f;
+      --accent-soft: rgba(163, 65, 47, 0.09);
+      --shadow: 0 18px 50px -34px rgba(22, 24, 26, 0.35);
+      --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+      --page: min(1180px, calc(100% - 2.5rem));
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111315;
+        --surface: #171a1c;
+        --ink: #f2efe9;
+        --muted: #a8aca9;
+        --line: rgba(255, 255, 255, 0.14);
+        --accent: #e8a17f;
+        --accent-soft: rgba(232, 161, 127, 0.1);
+        --shadow: 0 18px 50px -34px rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    html[data-theme="light"] {
+      --bg: #f6f4ef;
+      --surface: #fffdf9;
+      --ink: #16181a;
+      --muted: #6b6f73;
+      --line: rgba(22, 24, 26, 0.14);
+      --accent: #a3412f;
+      --accent-soft: rgba(163, 65, 47, 0.09);
+      --shadow: 0 18px 50px -34px rgba(22, 24, 26, 0.35);
+    }
+
+    html[data-theme="dark"] {
+      --bg: #111315;
+      --surface: #171a1c;
+      --ink: #f2efe9;
+      --muted: #a8aca9;
+      --line: rgba(255, 255, 255, 0.14);
+      --accent: #e8a17f;
+      --accent-soft: rgba(232, 161, 127, 0.1);
+      --shadow: 0 18px 50px -34px rgba(0, 0, 0, 0.8);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body.has-player { padding-bottom: 5.75rem; }
+
+    ::selection { background: var(--accent-soft); color: var(--ink); }
+
+    a { color: inherit; text-decoration: none; }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 20;
+      padding: 0.6rem 0.9rem;
+      background: var(--ink);
+      color: var(--bg);
+      transform: translateY(-160%);
+      transition: transform 180ms var(--ease);
+    }
+    .skip-link:focus { transform: translateY(0); }
+
+    .shell { width: var(--page); margin-inline: auto; }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.6rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.55rem;
+      font-size: 0.75rem;
+      font-weight: 650;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .brand span { color: var(--accent); }
+
+    .controls { display: flex; align-items: center; gap: 0.5rem; }
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      min-height: 40px;
+      padding: 0.5rem 0.85rem;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      background: transparent;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.8rem;
+      font-weight: 550;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      transition: transform 160ms var(--ease), border-color 160ms var(--ease), background-color 160ms var(--ease), color 160ms var(--ease);
+    }
+    .btn:hover { border-color: var(--accent); background: var(--accent-soft); transform: translateY(-1px); }
+    .btn:active { transform: translateY(0) scale(0.98); }
+    .btn[disabled] { opacity: 0.55; cursor: not-allowed; transform: none; border-color: var(--line); background: transparent; }
+    .btn[data-state="success"] { color: var(--accent); border-color: var(--accent); }
+    .btn[data-state="error"] { color: var(--accent); border-color: var(--accent); text-decoration: underline dotted; }
+    .btn[aria-busy="true"]::after {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border: 1.5px solid currentColor;
+      border-right-color: transparent;
+      border-radius: 50%;
+      animation: spin 700ms linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    [hidden] { display: none !important; }
+
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+    .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--bg); filter: brightness(1.06); }
+
+    .listen-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      padding: 1.5rem;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .listen-card p { max-width: 48ch; margin: 0; color: var(--muted); font-size: 0.94rem; }
+    .listen-card code { color: var(--ink); font-size: 0.8rem; overflow-wrap: anywhere; }
+
+    .player {
+      position: fixed;
+      inset-inline: 0;
+      bottom: 0;
+      z-index: 15;
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      box-shadow: 0 -18px 50px -34px rgba(22, 24, 26, 0.35);
+    }
+    .player audio { display: none; }
+    .player-inner {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) minmax(200px, 2fr) auto;
+      gap: 1.1rem;
+      align-items: center;
+      padding-block: 0.85rem;
+    }
+    .player-toggle {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      padding: 0;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--bg);
+      cursor: pointer;
+      transition: transform 160ms var(--ease), filter 160ms var(--ease);
+    }
+    .player-toggle:hover { transform: translateY(-1px); filter: brightness(1.06); }
+    .player-toggle:active { transform: scale(0.96); }
+    .player-toggle[disabled] { opacity: 0.5; cursor: not-allowed; transform: none; }
+    .player-toggle[aria-busy="true"] { color: transparent; }
+    .player-toggle[aria-busy="true"]::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--bg);
+      border-right-color: transparent;
+      border-radius: 50%;
+      animation: spin 700ms linear infinite;
+    }
+    .ico-play { width: 0; height: 0; border-left: 11px solid currentColor; border-top: 7px solid transparent; border-bottom: 7px solid transparent; margin-left: 2px; }
+    .ico-pause { width: 11px; height: 13px; border-left: 3px solid currentColor; border-right: 3px solid currentColor; }
+    .player-meta { display: grid; gap: 0.1rem; min-width: 0; }
+    .player-meta strong { font-size: 0.95rem; font-weight: 650; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .player-meta span { color: var(--muted); font-size: 0.78rem; }
+    .player-seek { display: grid; gap: 0.3rem; min-width: 0; }
+    .player-seek input, .player-volume input { width: 100%; accent-color: var(--accent); cursor: pointer; }
+    .player-seek input[disabled] { cursor: not-allowed; opacity: 0.5; }
+    .player-time { display: flex; justify-content: space-between; color: var(--muted); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+    .player-actions { display: flex; align-items: center; gap: 0.6rem; }
+    .chip { min-width: 42px; padding: 0.35rem 0.45rem; border: 1px solid var(--line); border-radius: 2px; background: transparent; color: var(--ink); font: inherit; font-size: 0.78rem; cursor: pointer; transition: border-color 160ms var(--ease); }
+    .chip:hover { border-color: var(--accent); }
+    .chip[disabled] { opacity: 0.5; cursor: not-allowed; }
+    .player-volume { display: block; width: 90px; }
+    .icon-btn { display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 1px solid var(--line); border-radius: 2px; background: transparent; color: var(--muted); font-size: 1.1rem; line-height: 1; cursor: pointer; transition: color 160ms var(--ease), border-color 160ms var(--ease); }
+    .icon-btn:hover { color: var(--accent); border-color: var(--accent); }
+    .player-error { margin: 0; padding: 0 1.5rem 0.75rem; color: var(--accent); font-size: 0.8rem; }
+    .player-error code { font-size: 0.75rem; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+    .hero {
+      display: grid;
+      gap: clamp(2.5rem, 6vw, 5rem);
+      padding-block: clamp(4rem, 11vw, 9rem) clamp(3rem, 7vw, 6rem);
+    }
+    @media (min-width: 960px) {
+      .hero { grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.55fr); align-items: end; }
+    }
+
+    .eyebrow {
+      margin: 0 0 1.6rem;
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 12ch;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.4rem, 12vw, 9rem);
+      font-weight: 500;
+      line-height: 0.9;
+      letter-spacing: -0.055em;
+    }
+    h1 em { font-style: italic; color: var(--accent); }
+
+    .artist {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: clamp(1.75rem, 4vw, 2.75rem);
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .artist::before { content: ""; width: clamp(2rem, 6vw, 4.5rem); height: 1px; background: var(--accent); }
+
+    .features {
+      margin: 0.45rem 0 0;
+      color: var(--muted);
+      font-size: clamp(0.82rem, 1.4vw, 0.95rem);
+      line-height: 1.5;
+    }
+
+    .note {
+      padding: 1.6rem;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .note h2 {
+      margin: 0 0 0.7rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .note p { margin: 0; font-size: 0.94rem; line-height: 1.65; color: var(--muted); }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0;
+      border-block: 1px solid var(--line);
+    }
+    .fact { padding: 1.15rem 0; }
+    .fact + .fact { padding-left: 1.25rem; border-left: 1px solid var(--line); }
+    .fact dt {
+      margin: 0 0 0.35rem;
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .fact dd { margin: 0; font-size: 0.98rem; font-weight: 600; }
+
+    .content-section { padding-block: clamp(3.5rem, 8vw, 6rem); }
+    .content-section + .content-section { border-top: 1px solid var(--line); }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-head h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      font-weight: 500;
+      letter-spacing: -0.035em;
+    }
+    .section-head span { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; }
+
+    .prose { max-width: 74ch; }
+    .prose p { margin: 0 0 1.1rem; color: var(--muted); font-size: clamp(0.98rem, 1.6vw, 1.08rem); line-height: 1.75; }
+    .prose p:first-child { color: var(--ink); font-size: clamp(1.1rem, 2vw, 1.28rem); line-height: 1.6; }
+    .prose a { color: var(--accent); border-bottom: 1px solid var(--accent-soft); transition: border-color 160ms var(--ease); }
+    .prose a:hover { border-color: var(--accent); }
+
+    #lyrics-list { max-width: 72ch; }
+
+    .line {
+      margin: 0;
+      padding: 0.42rem 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+      line-height: 1.45;
+      letter-spacing: -0.01em;
+      overflow-wrap: break-word;
+    }
+    .line::before {
+      content: attr(data-index);
+      display: inline-block;
+      width: 2.6rem;
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      vertical-align: 0.25em;
+    }
+
+    .empty {
+      display: grid;
+      gap: 0.85rem;
+      justify-items: start;
+      padding: clamp(2rem, 6vw, 3.5rem);
+      border: 1px dashed var(--line);
+      border-radius: 2px;
+      background: var(--surface);
+    }
+    .empty-mark { width: 42px; height: 1px; background: var(--accent); }
+    .empty strong { font-size: 1.05rem; font-weight: 650; }
+    .empty p { max-width: 52ch; margin: 0; color: var(--muted); font-size: 0.94rem; }
+
+    .sources { max-width: 74ch; }
+    .sources ul { display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; margin: 0; padding: 0; list-style: none; }
+    .sources a { color: var(--muted); border-bottom: 1px solid var(--line); font-size: 0.9rem; transition: color 160ms var(--ease), border-color 160ms var(--ease); }
+    .sources a:hover { color: var(--accent); border-color: var(--accent); }
+
+    .reveal { opacity: 1; transform: none; }
+    .js-motion .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 620ms var(--ease), transform 620ms var(--ease);
+      transition-delay: calc(var(--i, 0) * 45ms);
+    }
+    .js-motion .reveal.is-visible { opacity: 1; transform: none; }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 2rem 3rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    footer a { color: var(--ink); border-bottom: 1px solid var(--line); transition: color 160ms var(--ease), border-color 160ms var(--ease); }
+    footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+    @media (max-width: 640px) {
+      :root { --page: calc(100% - 2rem); }
+      .topbar { padding-block: 1.1rem; }
+      .controls { gap: 0.35rem; }
+      .btn { padding-inline: 0.7rem; font-size: 0.75rem; }
+      .fact + .fact { padding-left: 0.9rem; }
+      .section-head { align-items: flex-start; flex-direction: column; gap: 0.35rem; }
+      .line::before { width: 2.1rem; }
+      body.has-player { padding-bottom: 7rem; }
+      .player-inner { grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.7rem; padding-block: 0.7rem; }
+      .player-toggle { order: 1; }
+      .player-meta { order: 2; }
+      .player-actions { order: 3; }
+      .player-seek { order: 4; grid-column: 1 / -1; }
+      .player-volume { display: none; }
+      .player-meta span { display: none; }
+      .chip { min-width: 38px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+      .btn[aria-busy="true"]::after { border-right-color: currentColor; }
+      .player-toggle[aria-busy="true"]::after { border-right-color: var(--bg); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#utama">Lewati ke konten</a>
+
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#utama" aria-label="Kembali ke bagian utama">Arsip Lirik <span>/</span> 01</a>
+      <div class="controls">
+        <button class="btn" id="copy-link" type="button"><span class="label">Salin tautan</span></button>
+        <button class="btn" id="theme-toggle" type="button" aria-pressed="false"><span class="label">Mode gelap</span></button>
+        <button class="btn" id="player-show" type="button" hidden>Pemutar</button>
+      </div>
+    </header>
+
+    <main id="utama">
+      <section class="hero" aria-labelledby="judul">
+        <div>
+          <p class="eyebrow reveal" style="--i:0">Lirik · KYLA · 2009</p>
+          <h1 class="reveal" id="judul" style="--i:1">Do You <em>Mind</em></h1>
+          <p class="artist reveal" style="--i:2">KYLA</p>
+          <p class="features reveal" style="--i:2">prod. Crazy Cousinz · UK funky / house</p>
+        </div>
+
+        <aside class="note reveal" style="--i:3" aria-labelledby="catatan-judul">
+          <h2 id="catatan-judul">Tentang halaman ini</h2>
+          <p>Teks lirik pada halaman ini berasal dari salinan yang Anda tempelkan. Metadata dan konteks lagu diverifikasi dari sumber publik.</p>
+        </aside>
+      </section>
+
+      <dl class="facts reveal" style="--i:4">
+        <div class="fact"><dt>Judul</dt><dd id="fact-title">Do You Mind</dd></div>
+        <div class="fact"><dt>Artis</dt><dd id="fact-artist">KYLA</dd></div>
+        <div class="fact"><dt>Rilis</dt><dd id="fact-release">26 Jan 2009</dd></div>
+        <div class="fact"><dt>Produksi</dt><dd id="fact-producer">Crazy Cousinz</dd></div>
+        <div class="fact"><dt>Jumlah baris</dt><dd id="fact-count">0</dd></div>
+      </dl>
+
+      <section class="content-section" aria-labelledby="konteks-judul">
+        <div class="section-head reveal" style="--i:5">
+          <h2 id="konteks-judul">Konteks</h2>
+          <span>Catatan rilis</span>
+        </div>
+        <div class="prose reveal" style="--i:6">
+          <p>Do You Mind adalah singel debut KYLA, penyanyi Inggris yang berkecimpung di scene UK funky. Dirilis sebagai unduhan digital pada 26 Januari 2009, lagu ini ditulis bersama DJ Paleface dan diproduksi Crazy Cousinz. <a href="https://en.wikipedia.org/wiki/Do_You_Mind_(Kyla_song)" target="_blank" rel="noopener noreferrer">Wikipedia ↗</a></p>
+          <p>Vokal dari rekaman ini kemudian dilisensikan untuk One Dance milik Drake bersama Wizkid pada 2016, yang menempati posisi pertama di sejumlah tangga lagu internasional. <a href="https://www.prsformusic.com/m-magazine/features/kyla-dj-paleface-do-you-mind-drake-i-wrote-that-interview-2026" target="_blank" rel="noopener noreferrer">PRS for Music ↗</a></p>
+          <p>Lagu ini masuk Official Singles Chart pada 2009 dengan puncak ke-48, lalu tampil kembali pada 2026 setelah gelombang viral di TikTok dan serangkaian versi remix. <a href="https://www.officialcharts.com/songs/kyla-do-you-mind" target="_blank" rel="noopener noreferrer">Official Charts ↗</a></p>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="dengar-judul">
+        <div class="section-head reveal" style="--i:7">
+          <h2 id="dengar-judul">Dengar</h2>
+          <span>4:21 · audio lokal</span>
+        </div>
+        <div class="listen-card reveal" style="--i:7">
+          <button class="btn btn-primary" id="play-main" type="button" disabled>
+            <span class="ico ico-play" aria-hidden="true"></span>
+            <span class="label">Putar lagu</span>
+          </button>
+          <p>Remix KYLA × DJ Paleface, versi slowed 0.8×. Tekan putar, lalu nyanyi mengikuti lirik di bawah. Berkas: <code>assets/do-you-mind-remix.mp3</code></p>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="lirik-judul">
+        <div class="section-head reveal" style="--i:8">
+          <h2 id="lirik-judul">Lirik</h2>
+          <span id="lyrics-status">Belum ada baris</span>
+        </div>
+        <div id="lyrics-list"></div>
+      </section>
+
+      <section class="content-section sources reveal" style="--i:9" aria-labelledby="sumber-judul">
+        <h2 class="eyebrow" id="sumber-judul">Sumber</h2>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Do_You_Mind_(Kyla_song)" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+          <li><a href="https://www.officialcharts.com/songs/kyla-do-you-mind" target="_blank" rel="noopener noreferrer">Official Charts</a></li>
+          <li><a href="https://open.spotify.com/artist/77DAFfvm3O9zT5dIoG0eIO" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+          <li><a href="https://music.apple.com/us/artist/kyla/1099294621" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+          <li><a href="https://www.youtube.com/watch?v=0YHC69wa9JA" target="_blank" rel="noopener noreferrer">Video (YouTube)</a></li>
+          <li><a href="https://www.prsformusic.com/m-magazine/features/kyla-dj-paleface-do-you-mind-drake-i-wrote-that-interview-2026" target="_blank" rel="noopener noreferrer">PRS for Music</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>Do You Mind — KYLA</span>
+      <a href="https://open.spotify.com/artist/77DAFfvm3O9zT5dIoG0eIO" target="_blank" rel="noopener noreferrer">Dengarkan di Spotify ↗</a>
+    </footer>
+  </div>
+
+  <noscript>
+    <p style="padding:1rem 1.5rem">Interaksi tema, tombol salin, dan pemutar audio memerlukan JavaScript. Konten lirik tetap dapat dibaca.</p>
+  </noscript>
+
+  <div class="player" id="player" data-state="idle" role="region" aria-label="Pemutar audio">
+    <audio id="audio" preload="metadata">
+      <source src="assets/do-you-mind-remix.mp3" type="audio/mpeg">
+      <source src="../../Unduhan/Do-You-Mind-Remix-Kyla-DJ-Paleface-slowed-0-80x.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+    <div class="player-inner shell">
+      <button class="player-toggle" id="player-toggle" type="button" aria-label="Putar lagu" disabled>
+        <span class="ico ico-play" aria-hidden="true"></span>
+      </button>
+      <div class="player-meta">
+        <strong>Do You Mind</strong>
+        <span>KYLA · slowed 0.8×</span>
+      </div>
+      <div class="player-seek">
+        <input id="seek" type="range" min="0" max="0" value="0" step="0.1" aria-label="Posisi lagu" disabled>
+        <div class="player-time"><span id="current">0:00</span><span id="duration">0:00</span></div>
+      </div>
+      <div class="player-actions">
+        <button class="chip" id="rate" type="button" aria-label="Kecepatan putar 1 kali" disabled>1×</button>
+        <label class="player-volume">
+          <span class="sr-only">Volume</span>
+          <input id="volume" type="range" min="0" max="1" step="0.05" value="0.9" aria-label="Volume">
+        </label>
+        <button class="icon-btn" id="player-close" type="button" aria-label="Sembunyikan pemutar">×</button>
+      </div>
+    </div>
+    <p class="player-error" id="player-error" hidden>Berkas audio tidak dapat dimuat. Periksa <code>assets/do-you-mind-remix.mp3</code>.</p>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      // Teks lirik berasal dari salinan yang diberikan pengguna.
+      var SONG = {
+        title: "Do You Mind",
+        artist: "KYLA",
+        release: "26 Jan 2009",
+        producer: "Crazy Cousinz",
+        lines: [
+          `The whole night (night, night, night, night, night)`,
+          `The whole-`,
+          `Tell me, I need to know`,
+          `Where do you wanna go?`,
+          `'Cause if you're down`,
+          `I'll take it slow`,
+          `Make you lose control`,
+          `Baby, would you like`,
+          `To spend the night`,
+          `The whole night (the whole night)`,
+          `And maybe if you play it right`,
+          `You can be my guy`,
+          `The whole night (night, night)`,
+          `Do you mind if I?`,
+          `The whole night (night, night)`,
+          `The whole night (night, night)`,
+          `Would you mind if I?`,
+          `The whole night (night, night)`,
+          `Do you mind if I take you home tonight?`,
+          `Stay another day, if that's okay`,
+          `Tell me, baby`,
+          `Would you mind if I take you home with me?`,
+          `Where no one can see`,
+          `So don't be shy`,
+          `Baby, baby`,
+          `Do-do you mind if I take you home tonight?`,
+          `Stay another day, if that's okay`,
+          `Tell me, baby`,
+          `Would you mind if I take you home with me?`,
+          `Where no one can see`,
+          `So don't be shy`,
+          `Baby, baby`,
+          `Baby`,
+          `I like your style`,
+          `So let's get it on`,
+          `'Cause if we touch`,
+          `I can't get enough`,
+          `I'm falling for you`,
+          `Honey, would you like`,
+          `To make love tonight?`,
+          `The whole night`,
+          `And baby, if you play it right`,
+          `You can be all mine`,
+          `Do you mind if I take you home tonight?`,
+          `Stay another day, if that's okay`,
+          `Tell me, baby`,
+          `Would you mind if I take you home with me?`,
+          `Where no one can see`,
+          `So don't be shy`,
+          `Baby, baby`,
+          `Do-do you mind if I take you home tonight?`,
+          `Stay another day, if that's okay`,
+          `Tell me, baby`,
+          `Would you mind if I take you home with me?`,
+          `Where no one can see`,
+          `So don't be shy`,
+          `Baby, baby`,
+          `The whole night (night, night)`,
+          `Do you mind if I?`,
+          `The whole night (night, night)`,
+          `The whole night (night, night)`,
+          `Would you mind if I?`,
+          `The whole night (night, night)`,
+          `Baby, honey, baby`,
+          `Baby, honey, baby`,
+          `Baby, would you like`,
+          `To make love tonight?`,
+          `The whole night`,
+          `And baby, if you play it right`,
+          `You can be all mine, you can be all mine`,
+          `You can be all mine, you can be all mine`,
+          `You can be all mine, you can be all mine`,
+          `You can be all mine, you can be all mine`
+        ]
+      };
+
+      var list = document.getElementById("lyrics-list");
+      var status = document.getElementById("lyrics-status");
+      var count = document.getElementById("fact-count");
+
+      document.getElementById("fact-title").textContent = SONG.title;
+      document.getElementById("fact-artist").textContent = SONG.artist;
+      document.getElementById("fact-release").textContent = SONG.release;
+      document.getElementById("fact-producer").textContent = SONG.producer;
+      count.textContent = String(SONG.lines.length);
+      status.textContent = SONG.lines.length ? SONG.lines.length + " baris" : "Belum ada baris";
+
+      if (SONG.lines.length === 0) {
+        var empty = document.createElement("div");
+        empty.className = "empty reveal";
+        empty.style.setProperty("--i", "9");
+
+        var mark = document.createElement("span");
+        mark.className = "empty-mark";
+        mark.setAttribute("aria-hidden", "true");
+
+        var strong = document.createElement("strong");
+        strong.textContent = "Bagian lirik masih kosong.";
+
+        var note = document.createElement("p");
+        note.textContent = "Tampilan siap menerima baris lirik. Tambahkan teks ke dalam array `lines` pada skrip untuk menampilkannya di sini.";
+
+        empty.append(mark, strong, note);
+        list.appendChild(empty);
+      } else {
+        var fragment = document.createDocumentFragment();
+        SONG.lines.forEach(function (text, index) {
+          var line = document.createElement("p");
+          line.className = "line reveal";
+          line.style.setProperty("--i", String(index % 8));
+          line.setAttribute("data-index", String(index + 1).padStart(2, "0"));
+          line.textContent = text;
+          fragment.appendChild(line);
+        });
+        list.appendChild(fragment);
+      }
+
+      // Scroll reveal dengan transform/opacity saja.
+      var reveals = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+        reveals.forEach(function (node) { observer.observe(node); });
+      } else {
+        reveals.forEach(function (node) { node.classList.add("is-visible"); });
+      }
+
+      // Tema dengan preferensi sistem sebagai nilai awal.
+      var toggle = document.getElementById("theme-toggle");
+      var toggleLabel = toggle.querySelector(".label");
+      var preferred = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      var stored = null;
+      try { stored = localStorage.getItem("dym-theme"); } catch (e) { stored = null; }
+      var theme = stored === "dark" || stored === "light" ? stored : preferred;
+
+      function applyTheme(next) {
+        theme = next;
+        document.documentElement.setAttribute("data-theme", next);
+        var isDark = next === "dark";
+        toggle.setAttribute("aria-pressed", String(isDark));
+        toggleLabel.textContent = isDark ? "Mode terang" : "Mode gelap";
+        try { localStorage.setItem("dym-theme", next); } catch (e) { /* penyimpanan tidak tersedia */ }
+      }
+
+      applyTheme(theme);
+      toggle.addEventListener("click", function () {
+        applyTheme(theme === "dark" ? "light" : "dark");
+      });
+
+      // Salin tautan: state loading, disabled, success, dan error.
+      var copyButton = document.getElementById("copy-link");
+      var copyLabel = copyButton.querySelector(".label");
+
+      copyButton.addEventListener("click", function () {
+        if (copyButton.disabled) return;
+        copyButton.disabled = true;
+        copyButton.setAttribute("aria-busy", "true");
+        copyButton.removeAttribute("data-state");
+
+        var restore = function (state, text) {
+          copyButton.dataset.state = state;
+          copyLabel.textContent = text;
+          window.setTimeout(function () {
+            copyButton.disabled = false;
+            copyButton.removeAttribute("aria-busy");
+            copyButton.removeAttribute("data-state");
+            copyLabel.textContent = "Salin tautan";
+          }, 1800);
+        };
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(window.location.href)
+            .then(function () { restore("success", "Tautan tersalin"); })
+            .catch(function () { restore("error", "Gagal menyalin"); });
+        } else {
+          restore("error", "Gagal menyalin");
+        }
+      });
+      // Pemutar audio lokal: berkas tetap di Unduhan, tidak disematkan ke HTML.
+      var audio = document.getElementById("audio");
+      var player = document.getElementById("player");
+      var playerShow = document.getElementById("player-show");
+      var playToggle = document.getElementById("player-toggle");
+      var playMain = document.getElementById("play-main");
+      var playIcon = playToggle.querySelector(".ico");
+      var mainIcon = playMain.querySelector(".ico");
+      var mainLabel = playMain.querySelector(".label");
+      var seek = document.getElementById("seek");
+      var currentEl = document.getElementById("current");
+      var durationEl = document.getElementById("duration");
+      var rateBtn = document.getElementById("rate");
+      var volume = document.getElementById("volume");
+      var errorEl = document.getElementById("player-error");
+      var rates = [1, 0.8, 1.2];
+      var rateIndex = 0;
+
+      document.body.classList.add("has-player");
+
+      function fmtTime(seconds) {
+        if (!isFinite(seconds) || seconds < 0) return "0:00";
+        var minutes = Math.floor(seconds / 60);
+        var secs = Math.floor(seconds % 60);
+        return minutes + ":" + String(secs).padStart(2, "0");
+      }
+
+      function syncPlayUI() {
+        var playing = !audio.paused && !audio.ended;
+        var glyph = playing ? "ico ico-pause" : "ico ico-play";
+        playIcon.className = glyph;
+        mainIcon.className = glyph;
+        playToggle.setAttribute("aria-label", playing ? "Jeda lagu" : "Putar lagu");
+        mainLabel.textContent = playing ? "Jeda lagu" : "Putar lagu";
+        playToggle.setAttribute("aria-busy", String(playing && audio.readyState < 2));
+        player.dataset.state = playing ? (audio.readyState < 2 ? "loading" : "playing") : "paused";
+      }
+
+      function togglePlay() {
+        if (audio.error || playToggle.disabled) return;
+        if (audio.paused || audio.ended) {
+          var attempt = audio.play();
+          if (attempt && typeof attempt.catch === "function") {
+            attempt.catch(function () {
+              player.dataset.state = "error";
+              errorEl.hidden = false;
+            });
+          }
+        } else {
+          audio.pause();
+        }
+      }
+
+      playToggle.addEventListener("click", togglePlay);
+      playMain.addEventListener("click", togglePlay);
+
+      audio.addEventListener("loadedmetadata", function () {
+        seek.max = String(audio.duration);
+        durationEl.textContent = fmtTime(audio.duration);
+        playToggle.disabled = false;
+        playMain.disabled = false;
+        seek.disabled = false;
+        rateBtn.disabled = false;
+        syncPlayUI();
+      });
+
+      audio.addEventListener("timeupdate", function () {
+        seek.value = String(audio.currentTime);
+        currentEl.textContent = fmtTime(audio.currentTime);
+      });
+
+      audio.addEventListener("play", syncPlayUI);
+      audio.addEventListener("playing", syncPlayUI);
+      audio.addEventListener("pause", syncPlayUI);
+      audio.addEventListener("ended", syncPlayUI);
+
+      function markLoading() {
+        playToggle.setAttribute("aria-busy", "true");
+        player.dataset.state = "loading";
+      }
+      audio.addEventListener("waiting", markLoading);
+      audio.addEventListener("stalled", markLoading);
+      audio.addEventListener("canplay", syncPlayUI);
+
+      audio.addEventListener("error", function () {
+        player.dataset.state = "error";
+        errorEl.hidden = false;
+        playToggle.disabled = true;
+        playMain.disabled = true;
+        seek.disabled = true;
+        rateBtn.disabled = true;
+      });
+
+      seek.addEventListener("input", function () {
+        if (!isFinite(audio.duration)) return;
+        audio.currentTime = Number(seek.value);
+        currentEl.textContent = fmtTime(audio.currentTime);
+      });
+
+      volume.addEventListener("input", function () {
+        audio.volume = Number(volume.value);
+      });
+      audio.volume = Number(volume.value);
+
+      rateBtn.addEventListener("click", function () {
+        rateIndex = (rateIndex + 1) % rates.length;
+        audio.playbackRate = rates[rateIndex];
+        rateBtn.textContent = rates[rateIndex] + "×";
+        rateBtn.setAttribute("aria-label", "Kecepatan putar " + rates[rateIndex] + " kali");
+      });
+
+      document.getElementById("player-close").addEventListener("click", function () {
+        if (!audio.paused) audio.pause();
+        player.hidden = true;
+        playerShow.hidden = false;
+        document.body.classList.remove("has-player");
+      });
+
+      playerShow.addEventListener("click", function () {
+        player.hidden = false;
+        playerShow.hidden = true;
+        document.body.classList.add("has-player");
+      });
+
+      syncPlayUI();
+    })();
+  </script>
+</body>
+</html>
